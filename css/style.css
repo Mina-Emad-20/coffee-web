@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --logo_color: #ffffff;
+    --secon_main_color: #da9f5b;
+    --sections_color: #33211d;
+    --description_color: #847c76;
+    --sections_bg: #fffbf2;
+
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+}
+
+/****************** start carousel *********************/
+
+
+.carousel-inner,
+.carousel-item {
+    height: 90vh;
+}
+
+.carousel-item {
+    background-image: url(../img/carousel-1.jpg);
+
+    background-size: cover;
+}
+
+
+.intro_section .content {
+    transform: translateY(140%);
+}
+
+.intro_section h4 {
+    color: var(--secon_main_color);
+    font-size: 1.5rem;
+}
+
+.intro_section .main_address {
+    color: var(--logo_color);
+    font-size: 3rem;
+}
+
+
+/****************** end carousel *********************/
+/****************** start navigation bar *********************/
+nav.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    color: #FFF
+}
+
+.navbar-brand,
+.nav-link {
+    color: #FFF;
+    font-size: 1rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--secon_main_color);
+}
+
+.navigation_bar {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.navigation_bar .container a .brand_name {
+    font-size: 4rem;
+    color: var(--logo_color);
+}
+
+.navigation_bar .container .links_bar a {
+    font-size: 1.1rem;
+    color: var(--logo_color);
+}
+
+.navigation_bar .container .links_bar a:hover {
+    color: var(--secon_main_color);
+}
+
+.container-fluid .logo a {
+    font-size: 2rem;
+}
+
+/************************* end navigation bar ******************************/
+/************************* start about us ******************************/
+.about_us {
+    background-color: var(--sections_bg);
+    padding-bottom: 7%;
+}
+
+.about_us .section_address .line {
+    height: 110px;
+    width: 5px;
+    background-color: #da9f5b;
+    display: inline-flex;
+}
+
+.about_us .section_address h5 {
+    color: #da9f5b;
+    font-size: 1.3rem;
+}
+
+.about_us .section_address h2 {
+    color: var(--sections_color);
+    font-size: 3rem;
+}
+
+.about_us .catigouries h3 {
+    color: var(--sections_color);
+    font-size: 2rem;
+}
+
+.about_us .catigouries .left .down,
+.about_us .catigouries .right .down {
+    color: var(--description_color);
+}
+
+.about_us .catigouries .checked {
+    align-items: baseline;
+}
+
+.about_us .catigouries .checked i {
+    color: var(--secon_main_color);
+}
+
+
+.about_us .catigouries .left .left_button {
+    background-color: var(--sections_color);
+    color: #ffffff;
+    height: 41px;
+    width: 115px;
+    border: solid 1px;
+}
+
+.about_us .catigouries .right .right_button {
+    background-color: var(--secon_main_color);
+    color: black;
+    height: 41px;
+    width: 115px;
+    border: solid 1px;
+}
+
+.about_us .logo_address i {
+    color: var(--sections_color);
+    background-color: var(--secon_main_color);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.about_us .organic_products p {
+    color: var(--description_color);
+}
+
+/************************* end about us ******************************/
+/************************* start menu ******************************/
+.input_part {
+    position: relative;
+}
+
+.input_part .dark {
+    background-color: #21000080;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.input_part .overlay_top {
+    position: absolute;
+    top: -1%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.input_part .overlay_bottom {
+    position: absolute;
+    top: 94.5%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.input_part .input_description {
+    position: absolute;
+    top: 30%;
+    left: 31%;
+    z-index: 2;
+}
+
+.input_part .input_description h2 {
+    color: var(--secon_main_color);
+    font-size: 5rem;
+}
+
+.input_part .input_description h3 {
+    color: #ffffff;
+    font-size: 3.5rem;
+}
+
+.input_part .input_description p {
+    color: #ffffff;
+}
+
+.input_part .input_description .user_data {
+    position: absolute;
+    top: 30%;
+    left: 31%;
+    z-index: 2;
+}
+
+.input_part .input_description .user_data {
+    position: absolute;
+    top: 110%;
+    left: 20%;
+    z-index: 2;
+}
+
+.input_part .input_description input {
+    height: 45px;
+    width: 218px;
+    border: .5px;
+    border-right: transparent;
+}
+
+.input_part .input_description button {
+    height: 45px;
+    width: 80px;
+    border: .5px;
+    border-left: transparent;
+    background-color: var(--secon_main_color);
+}
+
+
+/************************* end menu  ******************************/
+/************************* start input ******************************/
+.menu_part .coffee_products .products_image img {
+    position: relative;
+}
+
+
+.menu_part .coffee_products span {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: var(--secon_main_color);
+    color: black;
+    z-index: 2;
+    margin-top: -1%;
+    margin-left: -5%;
+}
+
+/************************* end input ******************************/
+
+
+/************************ start clients  ******************************/
+.clients_part p {
+    color: var(--description_color);
+}
+
+.clients_part .circle {
+    margin-left: 45%;
+}
+
+.clients_part .circle .all {
+    background-color: #da9f5b;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.clients_part .circle .left {
+    background-color: var(--sections_color);
+    height: 25px;
+    width: 46px;
+    border-radius: 25px;
+}
+
+/************************ satrt end part **********************************/
